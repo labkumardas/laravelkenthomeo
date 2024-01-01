@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('slug');
-            $table->unsignedBigInteger('category_id'); 
+            $table->unsignedBigInteger('category_id');
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->unsignedBigInteger('subcategory_id'); // Change the foreign key column name
             $table->foreign('subcategory_id')->references('id')->on('subcategories')->onDelete('cascade');
@@ -28,6 +28,9 @@ return new class extends Migration
             $table->string('hsn_code');
             $table->decimal('gst_rate', 5, 2);
             $table->integer('status');
+            $table->string('stock');
+            $table->string('packing_size');
+
             $table->unsignedBigInteger('created_by');
 
             $table->timestamps();

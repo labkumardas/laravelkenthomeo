@@ -66,10 +66,25 @@
                         <span class="hide-menu">View Product</span>
                     </a>
                 </li>
-
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href=" " aria-expanded="false">
+                        <span>
+                            <i class="ti ti-alert-circle"></i>
+                        </span>
+                        <span class="hide-menu">Create Coupon</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href=" " aria-expanded="false">
+                        <span>
+                            <i class="ti ti-alert-circle"></i>
+                        </span>
+                        <span class="hide-menu">View Coupon</span>
+                    </a>
+                </li>
                 <li class="nav-small-cap">
                     <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-                    <span class="hide-menu">Content Managment</span>
+                    <span class="hide-menu">Blog Managment</span>
                 </li>
                 <li class="sidebar-item">
                     <a class="sidebar-link" href="{{ route('admin.createBlog') }}" aria-expanded="false">
@@ -147,7 +162,74 @@
                 </li>
 
                 </li>
-
+                <li class="nav-small-cap">
+                    <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                    <span class="hide-menu">CMS Managment</span>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="{{ route('admin.aboutUs') }} " aria-expanded="false">
+                        <span>
+                            <i class="ti ti-article"></i>
+                        </span>
+                        <span class="hide-menu">About us </span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href=" " aria-expanded="false">
+                        <span>
+                            <i class="ti ti-alert-circle"></i>
+                        </span>
+                        <span class="hide-menu">Delivery information</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href=" " aria-expanded="false">
+                        <span>
+                            <i class="ti ti-alert-circle"></i>
+                        </span>
+                        <span class="hide-menu">Privacy Policy</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href=" " aria-expanded="false">
+                        <span>
+                            <i class="ti ti-alert-circle"></i>
+                        </span>
+                        <span class="hide-menu">Terms & Conditions</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href=" " aria-expanded="false">
+                        <span>
+                            <i class="ti ti-alert-circle"></i>
+                        </span>
+                        <span class="hide-menu">Contact Us</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href=" " aria-expanded="false">
+                        <span>
+                            <i class="ti ti-alert-circle"></i>
+                        </span>
+                        <span class="hide-menu">Return Policy</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href=" " aria-expanded="false">
+                        <span>
+                            <i class="ti ti-alert-circle"></i>
+                        </span>
+                        <span class="hide-menu">Site Map</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href=" " aria-expanded="false">
+                        <span>
+                            <i class="ti ti-alert-circle"></i>
+                        </span>
+                        <span class="hide-menu">Slider</span>
+                    </a>
+                </li>
                 <li class="nav-small-cap">
 
                 </li>
@@ -228,12 +310,7 @@
         </div>
 
     </div>
-    <script>
-        tinymce.init({
-            selector: 'textarea',
-            // Other TinyMCE configurations...
-        });
-    </script>
+
     <main>
         @yield('content')
     </main>

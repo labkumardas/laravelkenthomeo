@@ -61,11 +61,42 @@
                                             <div class="mb-3">
                                                 <label for="exampleInputtext1" class="form-label">Product Title <span
                                                         style="color: red;">*</span></label>
-                                                <input type="text" class="form-control" id="exampleInputtext1">
+                                                <input type="text" name="title" class="form-control"
+                                                    id="exampleInputtext1" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="mb-3">
+                                                <label for="exampleInputtext1" class="form-label">Product Stock <span
+                                                        style="color: red;">*</span></label>
+                                                <input type="number" name="stock" class="form-control"
+                                                    id="exampleInputtext1" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="mb-3">
+                                                <label for="exampleInputtext1" class="form-label">Packing Size(ml)
+                                                    <span style="color: red;">*</span></label>
+                                                <input type="text" name="packing_size" class="form-control"
+                                                    id="exampleInputtext1" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="mb-3">
+                                                <label for="exampleInputtext1" class="form-label">Select Status <span
+                                                        style="color: red;">*</span></label>
+                                                <select class="form-control" name="status" required>
+
+                                                    <option value="1">Active</option>
+                                                    <option value="0">Inactive</option>
+
+
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
-
+                                    <hr>
                                     <!-- Add similar row/column structure for other fields -->
                                     <div class="row">
                                         <div class="col-md-4">
@@ -89,11 +120,11 @@
                                                 <input type="text" class="form-control" name="price" required>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <!-- Add similar row/column structure for other fields -->
 
-                                    <div class="row">
+                                        <!-- Add similar row/column structure for other fields -->
+
+
                                         <div class="col-md-4">
                                             <div class="mb-3">
                                                 <label for="exampleInputtext1" class="form-label">Discount <span
@@ -115,21 +146,10 @@
                                                 <input type="text" class="form-control" name="gst_rate" required>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
-                                            <div class="mb-3">
-                                                <label for="exampleInputtext1" class="form-label">Select Status <span
-                                                        style="color: red;">*</span></label>
-                                                <select class="form-control" name="status" required>
-
-                                                    <option value="1">Active</option>
-                                                    <option value="0">Inactive</option>
 
 
-                                                </select>
-                                            </div>
-                                        </div>
                                     </div>
-
+                                    <hr>
                                     <!-- Add similar row/column structure for other fields -->
 
                                     <div class="row">
@@ -156,9 +176,9 @@
                                         <div class="col-md-8"></div>
                                     </div>
                                     <!-- Add similar row/column structure for other fields -->
-
+                                    <hr>
                                     <div class="row">
-                                        <div class="col-md-8">
+                                        <div class="col-md-10">
                                             <div class="mb-3">
                                                 <label for="exampleInputtext1" class="form-label">short_description
                                                     <span style="color: red;">*</span></label>
@@ -167,7 +187,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-8">
+                                        <div class="col-md-10">
                                             <div class="mb-3">
                                                 <label for="exampleInputtext1" class="form-label">Description <span
                                                         style="color: red;">*</span></label>
